@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Calculator</title>
+</head>
+
+
+<h1>Calculator</h1>
+
+<div class="calc">
+	<div class="history-screen"><p id="history"></p></div>
+	<div class="calc-screen">
+		<p id="result">0</p>
+	</div>
+
+	<div class="buttons">
+
+		<div class="btn 1">1</div>
+		<div class="btn 2">2</div>
+		<div class="btn 3">3</div>
+		<div class="btn 4">4</div>
+
+		<div class="btn 5">5</div>
+		<div class="btn 6">6</div>
+		<div class="btn 7">7</div>
+		<div class="btn 8">8</div>
+
+		<div class="btn 9">9</div>
+		<div class="btn">0</div>
+		<div class="btn">.</div>
+		<div class="btn eq">=</div>
+
+		<div class="btn">+</div>
+		<div class="btn">-</div>
+		<div class="btn">*</div>
+		<div class="btn">/</div>
+		
+		<div class="btn">1/x</div>
+		<div class="btn">√x</div>
+		<div class="btn">x!</div>
+		<div class="btn">%</div>
+
+		<div class="btn">MR</div>
+		<div class="btn">MC</div>
+		<div class="btn">M+</div>
+		<div class="btn">M-</div>
+
+		<div class="btn">+/-</div>
+		<div class="btn">BIN</div>
+		<div class="btn">HEC</div>
+		<div class="btn C">C</div>
+
+		<div class="btn">e</div>
+		<div class="btn">Pi</div>
+		<div class="btn">RAND</div>
+		<div class="btn">exit</div>
+
+	</div>
+</div>
+<br>
+<div class="calc calc_down">
+	<div>
+		<div>
+			<select id="measures" name="measures">
+				<option id="firsttypeoption">Length</option>
+				<option id="secondtypeoption">Weight</option>
+				<option id="thirdtypeoption">Area</option>
+			</select>
+		</div>
+		<div>
+			<div >
+				<input  id="f-measure-input" placeholder="Enter a number">
+				<select id="f-measure-select">
+					<option id="secondfoption">Centimeters</option>
+					<option id="thirdfoption">Meters</option>
+					<option id="fourthfoption">Kilometers</option>
+				</select>
+			</div>
+			<div>
+				<span>=</span>
+			</div>
+			<div>
+				<input readonly id="s-measure-input">
+				<select id="s-measure-select">
+					<option id="secondsoption">Centimeters</option>
+					<option id="thirdsoption">Meters</option>
+					<option id="fourthsoption">Kilometers</option>
+				</select>
+			</div>
+			<button id="convert">Convert</button>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div>
+		<div>
+			<div>
+				<input id="f-system-input" placeholder="Enter a number">
+				<select id="f-system-select">
+					<option id="secondfsoption">Decimal</option>
+					<option id="thirdfsoption">Hexadecimal</option>
+					<option id="fourthfsoption">Binary</option>
+				</select>
+			</div>
+			<div>
+				<span>=</span>
+			</div>
+			<div>
+				<input readonly id="s-system-input">
+				<select id="s-system-select">
+					<option id="secondssoption">Decimal</option>
+					<option id="thirdssoption">Hexadecimal</option>
+					<option id="fourthssoption">Binary</option>
+				</select>
+			</div>
+			<button id="convertSystem">Convert</button>
+		</div>
+	</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
